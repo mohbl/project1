@@ -1,0 +1,130 @@
+.result {
+  background-color: #faf9f8;
+}
+.result .head {
+  background-color: #fff;
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-evenly;
+  border-bottom: 2px solid #e4e2e0;
+  padding-bottom: 15px;
+}
+.result .head .choice {
+  font-size: 20px;
+  cursor: pointer;
+}
+.result .head .choice.chosen {
+  font-weight: 600;
+  position: relative;
+}
+.result .head .choice.chosen::before {
+  content: "";
+  width: 130%;
+  height: 3px;
+  position: absolute;
+  bottom: -15.5px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #217bf4;
+}
+.result .container {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+.result .container .job {
+  width: 500px;
+  max-width: 95%;
+  background-color: #fff;
+  padding: 25px;
+  border-radius: 8px;
+  border: 1px solid #e7e7e7;
+}
+.result .container .job .title {
+  font-weight: 600;
+  font-size: 20px;
+  color: #3f3d56;
+}
+.result .container .job .name {
+  font-size: 15px;
+}
+.result .container .job .details {
+  margin: 15px 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+.result .container .job .details .det {
+  display: flex;
+  align-items: center;
+  background-color: #e7e7e7;
+  color: #3f3d56;
+  font-weight: 500;
+  padding: 5px;
+  border-radius: 10px;
+  font-size: 14px;
+  gap: 5px;
+}
+.result .container .job .description {
+  line-height: 1.4;
+  margin-bottom: 15px;
+}
+.result .container .btn-cont {
+  display: flex;
+  justify-content: flex-end;
+}
+.result .container .btn-cont .btn {
+  width: fit-content;
+  padding: 10px 16px;
+  background-color: #217bf4;
+}
+.result .container .person {
+  width: 500px;
+  max-width: 95%;
+  background-color: #fff;
+  border-radius: 8px;
+  border: 1px solid #e7e7e7;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.result .container .person .sqr {
+  background-color: #217bf4;
+  width: 140px;
+  height: 100%;
+  border-radius: 8px 0 0 8px;
+}
+.result .container .person .content {
+  padding: 25px;
+}
+.result .container .person .cont {
+  display: flex;
+  justify-content: space-between;
+}
+.result .container .person .cont .name {
+  color: #3f3d56;
+  font-weight: 600;
+  font-size: 20px;
+}
+.result .container .person .cont .avatar {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+}
+.result .container .person .jtitle {
+  margin: 5px 0;
+  font-size: 14px;
+  font-weight: 500;
+}
+.result .container .person .location {
+  margin-bottom: 20px;
+  font-size: 14px;
+  font-weight: 500;
+}
+.result .container .person .description {
+  line-height: 1.4;
+  margin-bottom: 15px;
+}
